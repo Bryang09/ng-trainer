@@ -1,0 +1,17 @@
+$highlight: #00ff7f;
+$text: #333;
+$lightText: #8d8d8d;
+$blue: #00d5ff;
+
+.Sub4 {
+  height: 100%;
+  // background: $text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    border-bottom: 3px solid $text;
+  }
+}

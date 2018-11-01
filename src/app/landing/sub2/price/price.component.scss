@@ -1,0 +1,90 @@
+$highlight: #00ff7f;
+$text: #333;
+$lightText: #8d8d8d;
+$blue: #00d5ff;
+
+.sub2Prices {
+  height: 40vh;
+  width: 70%;
+  margin: 0 auto;
+  transform: translateY(-13vh);
+  display: flex;
+  background: linear-gradient(90deg, $blue, #55d29b, $highlight);
+
+  .priceBox {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-child(2) {
+      box-shadow: 0 15px 25px -7px rgba(0, 0, 0, 0.8);
+      z-index: 2;
+    }
+
+    &:hover {
+      box-shadow: 0 15px 25px -7px rgba(0, 0, 0, 0.2),
+        0 -12px 10px -10px rgba(0, 0, 0, 0.01);
+      transition-duration: 0.5s;
+    }
+
+    .priceText {
+      width: 90%;
+      margin: 0 auto;
+      color: $lightText;
+      color: #fff;
+
+      h4 {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1171px) {
+  .sub2Prices {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .sub2Prices {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sub2Prices {
+    flex-direction: column;
+    height: 100%;
+    transform: translateY(0%);
+    width: 100%;
+    background: none;
+    margin-bottom: 5vh;
+    padding-bottom: 5vh;
+    border-bottom: 1px solid #eeefee;
+
+    .priceBox {
+      height: 40vh;
+      &:nth-child(1) {
+        background: $blue;
+      }
+
+      &:nth-child(2) {
+        box-shadow: none;
+        background: darken($highlight, 0.5);
+      }
+      &:nth-child(3) {
+        // background: #007490;
+        background: #8424ec;
+      }
+      &:hover {
+        box-shadow: 0 15px 25px -7px rgba(255, 255, 255, 0.2),
+          0 -12px 10px -10px rgba(255, 255, 255, 0.01);
+        transition-duration: 0.5s;
+      }
+    }
+  }
+}

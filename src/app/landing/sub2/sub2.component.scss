@@ -1,0 +1,34 @@
+$highlight: #00ff7f;
+$text: #333;
+$lightText: #8d8d8d;
+$blue: #00d5ff;
+
+.Sub2 {
+  height: 100%;
+
+  .sub2Img {
+    height: 45vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("https://images.pexels.com/photos/28061/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+        no-repeat center 20% / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vw;
+    color: #fff;
+    text-transform: uppercase;
+    h2 {
+      margin: 0;
+      font-size: 48px;
+      span {
+        color: $highlight;
+      }
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 36px;
+      margin-bottom: 0;
+    }
+  }
+}

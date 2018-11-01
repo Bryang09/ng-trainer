@@ -1,0 +1,12 @@
+<div class="Reviews">
+  <div class="Review" *ngFor="let review of reviews">
+    <div class="reviewImg" [ngStyle]="{'background': 'url(' + review.src +') no-repeat center 26% / cover'}"></div>
+    <div class="reviewText">
+      <h4>{{review.name}}</h4>
+      <h5>{{review.classes}}</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequuntur ea, rem laborum veniam,
+        pariatur voluptatem fugiat voluptates, nobis voluptate amet itaque alias soluta molestias provident iusto eum
+        ullam officia?</p>
+    </div>
+  </div>
+</div>
